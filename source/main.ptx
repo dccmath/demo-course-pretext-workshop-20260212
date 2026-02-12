@@ -6,7 +6,7 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Demo PreTeXt Course</title>
+    <title>My PreTeXt Course</title>
 
     <subtitle>PTX 101 Spring 2026</subtitle>
 
