@@ -51,7 +51,7 @@ var ptx_lunr_docs = [
   "url": "chap-intro-2.html#fig-1utf8",
   "type": "Table",
   "number": "5",
-  "title": "",
+  "title": "The UTF-8 code, showing only capital letters and space",
   "body": "         A  01000001  J  01001010  S  01010011    B  01000010  K  01001011  T  01010100    C  01000011  L  01001100  U  01010101    D  01000100  M  01001101  V  01010110    E  01000101  N  01001110  W  01010111    F  01000110  O  01001111  X  01011000    G  01000111  P  01010000  Y  01011001    H  01001000  Q  01010001  Z  01011010    I  01001001  R  01010010  (space)  00100000    The UTF-8 code, showing only capital letters and space  "
 },
 {
