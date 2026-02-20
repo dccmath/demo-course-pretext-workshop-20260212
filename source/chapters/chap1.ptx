@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+
+<introduction>
+    <p>
+      Welcome to Error-Correction and Information! Each class will correspond to a chapter in this book.
+      Before class, I will post the “Daily prep” section.
+      Read it carefully, complete the best answers you can for the Questions, and bring your work to class.
+      Start about 24 hours before class – that gives the right balance between being able to remember new ideas, and having enough time to let them “settle in” before class.
+    </p>
+
+    <p>
+      <alert>Questions.</alert> Each daily prep will have some questions for you to answer. Your goal is to make as much progress on these as possible. Take time to think through them and do your best, but it is OK to be wrong. You are always welcome to collaborate with others in this class on the questions. Please give clear credit for ideas by writing your collaborators’ names on the page.
+    </p>
+
+    <p>
+      After class, I will post a complete set of class notes with more formal definitions, based on what we did in class.
+      Part of your assignment for subsequent classes will be to read the class notes from the previous class.
+    </p>
+  </introduction>
+
+<subsection>
+  <title>Your first daily prep</title>
+
+  <p>
+    This class is about information.
+    For our purposes, “information” means any idea that can be communicated to another person in some concrete form.
+    For example, an email contains written information, as does a text message.
+    A Word document, a PDF, or a spreadsheet are also information.
+    We aren’t limited to writing: Photos are information, as are audio recordings.
+    There are many other kinds of information – take a moment to try to come up with some.
+  </p>
+
+  <p>
+    Because information involves another person, you must transmit that information in some way: Mailing a letter, carving into a stone tablet, or – most likely – using a computer.
+    Computers include tablets, phones, GPS devices, and anything electronic that has the ability to send a signal.Each individual piece of information that we transmit is called a message.
+  </p>
+
+  <p>
+    A key feature of a computer is that it can only work with and transmit numbers.
+    So, every message we transmit must be somehow written using numbers.
+  </p>
+
+  <example xml:id="fig-1simplecode">
+  <p>
+    For example, take this simple rule for turning capital letters and the space character into numbers:
+  </p>
+  <p>
+  <c>A = 0  B = 1  C = 2  ...  Y = 24  Z = 25  space = 26</c>
+  </p>
+</example>
+
+  <p>
+    This is an example of a code, which is simply a rule that specifies how to write a message using numbers.
+    In everyday language, “code” often implies secrecy and spies, but that’s not the case here.
+    Think of a code as an attempt to make a message <em>more understandable</em> to a computer. Codes that involve secrecy are usually called “ciphers” or “cryptosystems”.
+    We won’t study those in this class.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        The message “HI” is encoded as “7, 8”.
+        If someone sends you “7, 8, 26, 24, 14, 20”, you can decode it to get the message “HI YOU”.
+        Notice how we had to use the 26 to write a space between words – only numbers can be transmitted, so if we don’t encode the space as a number, we end up with “HIYOU”, which is somewhat less than ideal.
+      </p>
+    </statement>
+  </example>
+
+  <question>
+    <statement>
+      <p>
+        Decode “12,0,19,7,26,8,18,26,5,20,13”.
+        Then encode a short word or phrase of your choosing (<em>don’t</em> write down its “plain” or unencoded form on the sheet you bring to class).
+      </p>
+    </statement>
+  </question>
+
+  <question>
+    <statement>
+      <p>
+        Our first code only deals with capital letters and spaces.
+        What else might you want to include in this code, in order to be able to send useful text messages? Design and write down a rule that includes everything you think you will need for a written message.
+        Encode a message that makes use of your additional symbols.
+      </p>
+    </statement>
+  </question>
+
+    <p>
+      Here’s another example of a code.
+      The code in Figure <xref ref="fig-1utf8" text="global" /> is called “Unicode Transformation Format 8-bit”, or just “UTF-8”.
+      This code is used by the vast majority of everything on the Internet (including web pages, emails, text messages, so on).
+      In UTF-8, each letter is represented by 8 bits (a 1 or a 0).
+      Each of these 8 bit encoded messages is called a codeword.
+    </p>
+
+    <table xml:id="fig-1utf8">
+    <tabular>
+      <col halign="center" /> <col halign="center" right="minor" /> <col halign="center" /> <col halign="center" right="minor" /> <col halign="center" /> <col halign="center" />
+      <row>
+        <cell>A</cell>
+        <cell>01000001</cell>
+        <cell>J</cell>
+        <cell>01001010</cell>
+        <cell>S</cell>
+        <cell>01010011</cell>
+      </row>
+
+      <row>
+        <cell>B</cell>
+        <cell>01000010</cell>
+        <cell>K</cell>
+        <cell>01001011</cell>
+        <cell>T</cell>
+        <cell>01010100</cell>
+      </row>
+
+      <row>
+        <cell>C</cell>
+        <cell>01000011</cell>
+        <cell>L</cell>
+        <cell>01001100</cell>
+        <cell>U</cell>
+        <cell>01010101</cell>
+      </row>
+
+      <row>
+        <cell>D</cell>
+        <cell>01000100</cell>
+        <cell>M</cell>
+        <cell>01001101</cell>
+        <cell>V</cell>
+        <cell>01010110</cell>
+      </row>
+
+      <row>
+        <cell>E</cell>
+        <cell>01000101</cell>
+        <cell>N</cell>
+        <cell>01001110</cell>
+        <cell>W</cell>
+        <cell>01010111</cell>
+      </row>
+
+      <row>
+        <cell>F</cell>
+        <cell>01000110</cell>
+        <cell>O</cell>
+        <cell>01001111</cell>
+        <cell>X</cell>
+        <cell>01011000</cell>
+      </row>
+
+      <row>
+        <cell>G</cell>
+        <cell>01000111</cell>
+        <cell>P</cell>
+        <cell>01010000</cell>
+        <cell>Y</cell>
+        <cell>01011001</cell>
+      </row>
+
+      <row>
+        <cell>H</cell>
+        <cell>01001000</cell>
+        <cell>Q</cell>
+        <cell>01010001</cell>
+        <cell>Z</cell>
+        <cell>01011010</cell>
+      </row>
+
+      <row>
+        <cell>I</cell>
+        <cell>01001001</cell>
+        <cell>R</cell>
+        <cell>01010010</cell>
+        <cell>(space)</cell>
+        <cell>00100000</cell>
+      </row>
+    </tabular>
+  </table>
+
+    The UTF-8 code, showing only capital letters and space
+    <p>
+      Be careful: In Figure <xref ref="fig-1utf8" text="global" />, we’ve only shown part of UTF-8 – there are many other symbols that would make this code listing too large to fit on this page.
+      For example, <c>01100001</c> represents the lowercase letter “a”, and <c>00100001</c> represents an exclamation point “!”.
+      UTF-8 includes codewords for all English letters, digits, and many punctuation marks.
+    </p>
+
+    <p>
+      Up until now, we have been lying a bit.
+      In our first code, we put commas between numbers.
+      But a computer can <em>only</em> use numbers to communicate.
+      Commas, spaces, and other ways of dividing numbers into groups are right out.
+      So, we must smash together all of the codewords we want to transmit.
+    </p>
+
+    <question>
+      <statement>
+        <p>
+          Suppose you receive this message which is encoded with UTF-8:
+          <c>
+            0101001101001101010010010100110001000101
+          </c>
+          Show how to decode it into a common English word.
+        </p>
+      </statement>
+    </question>
+
+    <question>
+      <statement>
+        <p>
+          Encode a short word or phrase of your choosing with UTF-8.
+        </p>
+      </statement>
+    </question>
+
+    <p>
+      In this class, we will almost always work with binary codes, that is, codes that use only 0’s and 1’s.
+      Furthermore, our codes will (for now) always be block codes, in which each codeword has the same number of bits (8, for UTF-8).
+      “Our first code” (Figure <xref ref="fig-1simplecode" text="global" />) is <em>not</em> a block code, because some codewords use 1 digit, and others use 2 digits.
+      The next question shows why block codes are important.
+    </p>
+
+    <question>
+      <statement>
+        <p>
+          Suppose we are using “our first code” (Figure <xref ref="fig-1simplecode" text="global" />).
+          You receive this encoded message with all codewords smashed together:
+          <c>
+            0117020301170
+          </c>
+          Find at least two different decodings of this.
+          That is, find two different messages that would both encode to this same number.
+          Why is this a problem? Why <em>can’t</em> this happen with UTF-8?
+        </p>
+      </statement>
+    </question>
+
+    <p>
+      So far, we’ve only focused on information.
+      What about the “error-correction” part of the class’s name? Computer transmissions almost always involve errors, which happen when one bit is “flipped” from a 0 to 1 or vice versa.
+      This can be caused by static, faulty wiring, lightning, cosmic rays, inconveniently placed birds, or anything else that interferes with the transmission.
+    </p>
+
+    <question>
+      <statement>
+        <p>
+          Suppose you receive this message in UTF-8: <c>01011110</c>.
+          You can’t decode it – why not? In this message, there has been an error: <em>One</em> of the bits was flipped from 0 to 1 or vice versa.
+          With this information, what might the original message have been? List as many possibilities as you can find using Figure <xref ref="fig-1utf8" text="global" />.
+          For each possibility, indicate where the error happened, and what the correct decoding would be.
+        </p>
+      </statement>
+    </question>
+
+    <p>
+      In this last question, you should be able to find several different “correct” decodings, depending on where the error occurred.
+      How can you choose which of these is the right one? Much of this class will be focused on answering this question.
+    </p>
+
+    </subsection>
+
+    <subsection>
+      <title>Class notes</title>
+
+      <subsubsection>
+        <title>Basic definitions</title>
+        <definition xml:id="def-code">
+          <statement>
+            <p>
+              Let <m>S</m> be a set of symbols called messages or source words, and <m>W</m> be a set of symbols called codewords.
+              A code <m>C</m> is a bijective function <m>C : S \to W</m>.
+            </p>
+          </statement>
+        </definition>
+
+        <p>
+          We say that message <m>m \in S</m> is encoded to <m>C(m)</m>.
+          Because <m>C</m> is bijective, it has an inverse.
+          Thus if we receive the codeword <m>w \in W</m>, we can decode it to get the source word <m>C^{-1}(w)</m>.
+        </p>
+
+        <p>
+          However, we will often focus <em>only</em> on the codewords in a code, for reasons which we will explain soon.
+          Thus we often treat a code <m>C</m> as the same thing as its set of codewords.
+          That is (abusing terminology by using “C” twice):
+          <me>
+            C = \{ C(m) : m \in S \}.
+          </me>
+          So, for example, if we write “<m>w \in C</m>”, this means that <m>w</m> is a codeword of <m>C</m> (and that we are ignoring its corresponding message).
+        </p>
+
+        <p>
+          Once a message is encoded into a codeword, it is transmitted through a channel which may change the codeword.
+          The process that changes symbols in a transmitted codeword is called noise.
+          The result is called a received message, which is then decoded to give us a decoded message.
+          Hopefully, the decoded message is the same as the source word, but the errors introduced by noise in the channel may make this impossible! This process is represented by the diagram in Figure <xref ref="fig1-transmitgeneric" text="global" />.
+          A more concrete example, with a code and codeword, is in Figure <xref ref="fig1-transmitexample" text="global" />.
+        </p>
+
+        <figure xml:id="fig1-transmitgeneric">
+          <image source="fig1-generictransmit.png" width="100%">
+            <shortdescription></shortdescription>
+          </image>
+          <caption></caption>
+        </figure>
+        
+        <figure xml:id="fig1-transmitexample">
+          <image source="fig1-transmitex.png" width="100%">
+            <shortdescription></shortdescription>
+          </image>
+          <caption></caption>
+        </figure>
+
+        <p>
+          As the diagrams show, errors in transmission can be a major problem.
+          An error is simply any change that occurs to the codeword as it moves through the channel.
+          This can range from a bit flip (a single 0 changes to 1, or vice versa) to a complete change of the entire codeword.
+        </p>
+
+        <p>
+          We will generally study binary codes, in which the codewords consist only of binary digits (bits, 0 or 1).
+          We will also focus on block codes, in which every codeword has the same number of digits, called its length.
+          We will often use the notation <m>\{0,1\}^{n}</m> or <m>\mathbb{Z}_{2}^{n}</m> to represent the set of all binary strings of length <m>n</m>.
+          These are also called vectors, tuples, or points.
+        </p>
+
+        <example xml:id="ex1-2to5">
+          <statement>
+            <p>
+              Here is a “2-to-5” code <m>C</m>:
+            </p>
+
+            <p>
+              <tabular>
+                <col halign="center" /> <col halign="center" /> <col halign="center" />
+                <row>
+                  <cell> <em>00</em> </cell>
+                  <cell> <m>\longleftrightarrow</m> </cell>
+                  <cell> <m>\mathtt{00000}</m> </cell>
+                </row>
+
+                <row>
+                  <cell> <em>01</em> </cell>
+                  <cell> <m>\longleftrightarrow</m> </cell>
+                  <cell> <m>\mathtt{01011}</m> </cell>
+                </row>
+
+                <row>
+                  <cell> <em>10</em> </cell>
+                  <cell> <m>\longleftrightarrow</m> </cell>
+                  <cell> <m>\mathtt{10101}</m> </cell>
+                </row>
+
+                <row>
+                  <cell> <em>11</em> </cell>
+                  <cell> <m>\longleftrightarrow</m> </cell>
+                  <cell> <m>\mathtt{11110}</m> </cell>
+                </row>
+              </tabular>
+            </p>
+
+            <p>
+              The set of source words are <m>S = \{00,01,10,11\}</m>.
+              We can also write this as <m>S = \mathbb{Z}_{2}^{2}</m>.
+              The set of codewords is <m>W = \{00000,01011,10101,11110\}</m>.
+              Note that <m>W \subseteq \mathbb{Z}_{2}^{5}</m>, but <m>W \neq \mathbb{Z}_{2}^{5}</m>.
+              We write the code as a table with double arrows <m>\longleftrightarrow</m> to emphasize the fact that every source word corresponds to exactly one codeword, and vice versa (that is, the code is a bijective function).
+              We can describe this code as a “binary block code with block length 5”.
+            </p>
+          </statement>
+        </example>
+
+        <p>
+          There are two basic ways to handle errors: <em>detect</em> them (that is, determine that they’ve happened) and request a retransmission.
+          Or, <em>correct</em> the error ourselves without asking the sender for any more information.
+        </p>
+      </subsubsection>
+
+
+      <subsubsection>
+        <title>Detecting errors with parity check bits</title>
+
+        <p>
+          A common way to detect errors is the parity check bit.
+          This is simply an extra bit (0 or 1) placed at the end of a codeword.
+          The sender chooses the parity check bit so that the number of 1’s in the codeword is even.
+          The receiver knows this convention and uses it to detect some errors.
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Using UTF-8 (Figure <xref ref="fig-1utf8" text="global" />), suppose we want to send the message “SMILE” (as you did in the daily prep).
+              We encode the message one letter at a time.
+              For each letter, we look at each codeword and determine the number of 1’s already in it.
+              We add a single extra bit so that the total number of 1’s is now even.
+            </p>
+
+            <p>
+              <tabular>
+                <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" />
+                <row>
+                  <cell>letter</cell>
+                  <cell>codeword</cell>
+                  <cell>number of 1’s</cell>
+                  <cell>parity check bit</cell>
+                  <cell>final codeword</cell>
+                </row>
+
+                <row>
+                  <cell>S</cell>
+                  <cell>01010011</cell>
+                  <cell>even</cell>
+                  <cell>0</cell>
+                  <cell>010100110</cell>
+                </row>
+
+                <row>
+                  <cell>M</cell>
+                  <cell>01001101</cell>
+                  <cell>even</cell>
+                  <cell>0</cell>
+                  <cell>010011010</cell>
+                </row>
+
+                <row>
+                  <cell>I</cell>
+                  <cell>01001001</cell>
+                  <cell>odd</cell>
+                  <cell>1</cell>
+                  <cell>010010011</cell>
+                </row>
+
+                <row>
+                  <cell>L</cell>
+                  <cell>01001100</cell>
+                  <cell>odd</cell>
+                  <cell>1</cell>
+                  <cell>010011001</cell>
+                </row>
+
+                <row>
+                  <cell>E</cell>
+                  <cell>01000101</cell>
+                  <cell>odd</cell>
+                  <cell>1</cell>
+                  <cell>010001011</cell>
+                </row>
+              </tabular>
+            </p>
+
+              <p>
+                Then we concatenate all of the codewords into one long string and transmit it:
+                <c>>
+                  010100110010011010010010011010011001010001011
+                </c>
+              </p>
+
+              <p>
+                The channel causes some errors, so the receiver gets this received message:
+                <c>
+                  010101110 010011010 010010011 010011000 010001011
+                </c>
+              </p>
+
+              <p>
+                The receiver, knowing to expect codewords of 9 bits each, splits apart the message.
+                The receiver knows that they should find an even number of 1’s in each message.
+                They verify (“check”) this:
+                <tabular>
+                  <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" />
+                  <row>
+                    <cell>received word</cell>
+                    <cell>number of 1’s</cell>
+                    <cell>checks?</cell>
+                  </row>
+
+                  <row>
+                    <cell>010101110</cell>
+                    <cell>odd</cell>
+                    <cell>no</cell>
+                  </row>
+
+                  <row>
+                    <cell>010011010</cell>
+                    <cell>even</cell>
+                    <cell>yes</cell>
+                  </row>
+
+                  <row>
+                    <cell>010010011</cell>
+                    <cell>even</cell>
+                    <cell>yes</cell>
+                  </row>
+
+                  <row>
+                    <cell>010011000</cell>
+                    <cell>odd</cell>
+                    <cell>no</cell>
+                  </row>
+
+                  <row>
+                    <cell>010001011</cell>
+                    <cell>even</cell>
+                    <cell>yes</cell>
+                  </row>
+                </tabular>
+              </p>
+
+              <p>
+                Now the receiver knows that something went wrong in the 1st and 4th letters.
+                Importantly, they can’t be sure <em>which</em> bit is wrong (you saw an example of this in the daily prep, question 6).
+                So, the receiver asks the sender to retransmit each incorrect letter, and they repeat this process until each received message checks.
+              </p>
+            </statement>
+          </example>
+
+            <p>
+              Because we are viewing this example from “above” and can see the sender’s intended message, we know that the first letter had a genuine error (in the 6th bit).
+              But the 4th letter had an error in the parity check (9th bit).
+              Thus the “data” (first 8 bits) contained in the 4th letter is correct.
+              But, the receiver has no way of knowing this, so they end up requesting a retransmission of the 4th letter anyhow.
+              Any time we add extra bits in to a message, we give errors another place to occur.
+              Thus, our general goal is to add as few extra bits as possible.
+            </p>
+
+            <p>
+              Parity check bits are extremely easy to find and use, but all they can do is tell you that something went wrong – they can’t tell you <em>what</em> went wrong, nor how to <em>fix</em> any errors.
+              This makes parity check bits widely used in situations where it’s easy to request a retransmission.
+              Examples of this include short-length computer wiring in walls, communications between a mouse and a computer, and bar codes.
+              For example, when a bar code fails to scan at a store, you can just re-scan it, or type in the number manually.
+              A non-example includes photos transmitted by a Mars orbiter, which take minutes or even hours to send and can’t easily be retransmitted.
+            </p>
+          </subsubsection>
+
+
+          <subsubsection>
+            <title>Correcting errors</title>
+
+            <p>
+              Next, we look at some ways to actually correct errors.
+              The goal is to give the receiver a way to determine the intended message, <em>without</em> needing a retransmission.
+              Most of this class will be spent developing more complex and effective codes that can correct errors, but first we will start with a small example to demonstrate that error-correction is possible.
+            </p>
+
+            <p>
+              The <m>n</m>-repetition code <m>R_{n}</m> is the code in which each bit of the source word is repeated <m>n</m> times.
+              More formally, <m>R_{n}: \mathbb{Z}_{2}\to \mathbb{Z}_{2}^{n}</m> such that <m>R_{n}(m) = mmm\cdots m</m> (<m>n</m> times).
+              For example, the 3-repetition code <m>R_{3}</m> is given in Figure <!--<xref ref="fig-13rep" text="global" />.-->
+            </p>
+            <!--TODO:Make the 3-rep code
+            <me>
+              \begin{align*}0&#x26;\to 000 \\ 1&#x26;\to 111\end{align*}
+            </me>
+            The 3-repetition code
+            -->
+            <example>
+              <statement>
+                <p>
+                  We will encode the UTF-8 message “S” (01010011) using the 3-repetition code:
+                  <me>
+                    01010011 \to 000111000111000000111111
+                  </me>
+                </p>
+
+                <p>
+                  This is transmitted, and the channel adds some errors:
+                </p>
+
+                <p>
+                  <me>
+                    000110000111001000101111
+                  </me>
+                </p>
+
+                <p>
+                  In each block of 3 bits, we determine whether 0 or 1 is in the majority and use that “majority vote” to correct the errors:
+                </p>
+
+                <p>
+                  <tabular>
+                    <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" /> <col halign="center" />
+                    <row>
+                      <cell>Block</cell>
+                      <cell>000</cell>
+                      <cell>110</cell>
+                      <cell>000</cell>
+                      <cell>111</cell>
+                      <cell>001</cell>
+                      <cell>000</cell>
+                      <cell>101</cell>
+                      <cell>111</cell>
+                    </row>
+
+                    <row>
+                      <cell>Majority</cell>
+                      <cell>0</cell>
+                      <cell>1</cell>
+                      <cell>0</cell>
+                      <cell>1</cell>
+                      <cell>0</cell>
+                      <cell>0</cell>
+                      <cell>1</cell>
+                      <cell>1</cell>
+                    </row>
+                  </tabular>
+                </p>
+
+                <p>
+                  Thus we correctly decode the message as <c>01010011</c>.
+                </p>
+              </statement>
+            </example>
+
+            <p>
+              A 3-repetition code can correct 1 error per block of 3 bits.
+              However, if 2 errors occur within a block, we would “correct” the message incorrectly (that is, if 000 becomes 101 due to two errors, we would think that 101 was really 111 with a single error).
+              This shows that the 3-repetition code can only correct 1 error per block, and no more.
+              We can generalize this to other <m>n</m>-repetition codes – see the exercises.
+            </p>
+
+            <p>
+              A word on terminology: Up until now, we have used codes which have letters as the possible messages, and binary strings as their codewords.
+              In the example above, we used the code UTF-8 to encode “S” to “01010011”.
+              However, then we applied a <em>second</em> code, the 3-repetition code, to this already encoded message.
+              The 3-repetition code’s messages are just individual bits: 0 or 1.
+              The code words are 3 bits: 000 or 111.
+              Thus we really have two layers of source and codewords.
+            </p>
+
+            <p>
+              To simplify this, we only focus on one layer at a time.
+              In this case, we are most interested in the error-correcting layer.
+              Thus, we don’t worry about how “S” got turned into “01010011” (unless we are focusing on that aspect).
+              Instead, we simply assume that the sender wants to send the source message “01010011” (for whatever reason), and then apply the 3-repetition code directly to this message.
+            </p>
+
+            <p>
+              Next we build up some concepts related to determining how “good” an error-correcting code is.
+            </p>
+
+            <p>
+              One thing to notice about the repetition codes are that they are very inefficient.
+              Every bit is blown up into <m>n</m> copies of the same bit.
+              Thus only 1 out of every <m>n</m> bits of each codeword is actually meaningful, and the rest is extra copies.
+            </p>
+
+            <p>
+              Suppose <m>C : \mathbb{Z}_{2}^{k}\to \mathbb{Z}_{2}^{n}</m> is a block code.
+              Recall that this means that the code converts <m>k</m>-bit messages into <m>n</m>-bit codewords.
+              The rate of <m>C</m> is defined to be <m>\frac{k}{n}</m>.
+              You can informally think of the rate as being the length of the source words divided by the length of the codewords.
+            </p>
+
+            <example>
+              <statement>
+                <p>
+                  The 3-repetition code can be seen as a map from <m>\mathbb{Z}_{2}^{1}</m> to <m>\mathbb{Z}_{2}^{3}</m>.
+                  Thus <m>k = 1</m>, which indicates that the source words are just 1 digit long (0 and 1).
+                  We have <m>n = 3</m>, meaning that the codewords (000 and 111) are each 3 digits long.
+                  Thus the rate of the 3-repetition code is <m>R = \frac{1}{3}</m>.
+                  We can interpret this as saying that only <m>\frac{1}{3}\approx 33\%</m> of each codeword contains actual information, while the rest is added redundancy.
+                </p>
+              </statement>
+            </example>
+
+            <p>
+              The number of nonzero coordinates in a codeword <m>c</m> is called the Hamming weight of <m>c</m> and is denoted <m>\wt(c)</m>.
+            </p>
+
+            <example>
+              <statement>
+                <p>
+                  The Hamming weight of <m>0010111</m> is 4, because there are 4 positions that don’t contain a 0.
+                  We write <m>\wt(0010111) = 4</m>.
+                </p>
+              </statement>
+            </example>
+
+            <p>
+              The Hamming distance between two codewords <m>a</m> and <m>b</m>, denoted <m>d(a,b)</m> is the number of coordinates in which the codewords differ.
+              The minimum distance of a code <m>C</m> is defined to be:
+              <me>
+                d(C) = \min \{ d(a,b) : a, b \in C \text{ and }a \neq b\}.
+              </me>
+              In other words, the minimum distance is the smallest distance between any two different codewords in the code.
+              We never compare the distance of a codeword to itself, because <m>d(a,a) = 0</m> always.
+            </p>
+
+            <p>
+              Note that Hamming distance and minimum distance only make sense for codewords that have the same number of bits.
+              Thus, from this point on, we will always assume that we are working with a block code (unless otherwise stated).
+            </p>
+
+            <example>
+              <statement>
+                <p>
+                  Consider the 2-to-5 code <m>C</m> (it is listed in Example <xref ref="ex1-2to5" text="global" />).
+                  We have <m>d(01011,10101) = 4</m>, because these words differ in 4 positions (the only position they don’t differ in is the last coordinate).
+                  We also have <m>d(11110,01011) = 3</m> and <m>d(00000,01011) = 3</m>.
+                  If we calculate the distance between every pair of distinct words, we find that the smallest value is 3.
+                  Thus the minimum distance of <m>C</m> is <m>d(C) = 3</m>.
+                </p>
+              </statement>
+            </example>
+
+            <p>
+              The process of decoding that we have seen so far is called nearest-neighbor decoding.
+              In this form of decoding, a received word <m>w</m> is compared against all possible codewords.
+              Calculate the distance <m>d(w,c)</m> for each codeword <m>c</m>.
+              To choose the correct decoding of <m>w</m>, pick the codeword <m>c</m> for which <m>d(w,c)</m> is minimum.
+            </p>
+
+            <p>
+              This is the same as the decoding algorithm that we saw for the 3-repetition code.
+              You can think of calculating <m>d(w,000)</m> and <m>d(w,111)</m> as getting “votes” for how different <m>w</m> is from 000 and 111.
+              The smaller the number of votes, the fewer differences, and hence the more similar the two words are.
+              We choose to decode using the codeword with the fewest differences from <m>w</m>.
+            </p>
+
+            <p>
+              Of course, this doesn’t work well if more than one codeword gives the same minimum value! We will discuss, in the future, how to design codes to ensure that there is always a unique “nearest neighbor”.
+            </p>
+
+            <example>
+              <statement>
+                <p>
+                  Again using the 2-to-5 code <m>C</m> from Example <xref ref="ex1-2to5" text="global" />: Suppose we receive <m>r = 11101</m>.
+                  We calculate the distance <m>d(r,c)</m> for each codeword <m>c \in C</m>:
+                </p>
+                <me>
+                  <mrow>d(r,00000) \amp= 4</mrow>
+                  <mrow>d(r,01011) \amp= 3</mrow>
+                  <mrow>d(r,10101) \amp= 1</mrow>
+                  <mrow>d(r,11110) \amp= 2</mrow>
+                </me>
+
+                <p>
+                  Thus the nearest neighbor to <m>r</m> is <m>10101</m> with distance 1, so we correct <m>11101</m> to <m>10101</m>, which means we decode <m>11101</m> as <m>10</m>.
+                </p>
+
+                <p>
+                  On the other hand, if we received <m>r = 11000</m>, we could do the same calculations to get:
+                </p>
+                <me>
+                  <mrow>d(r,00000) \amp= 2</mrow>
+                  <mrow>d(r,01011) \amp= 3</mrow>
+                  <mrow>d(r,10101) \amp= 3</mrow>
+                  <mrow>d(r,11110) \amp= 2</mrow>
+                </me>
+
+                <p>
+                  There are two different codewords that give the same minimum value of 2, which means that we don’t know how to decode <m>r</m>.
+                  This shows that at least 2 errors must have occurred, and that this code can’t always correct 2 errors.
+                </p>
+
+                <p>
+                  Finally, notice that if we receive a codeword, such as <m>r = 10101</m>, we will find the smallest distance to be 0.
+                </p>
+              </statement>
+            </example>
+
+            <p>
+              As the above example demonstrates, the distance between codewords determines whether it is possible to uniquely decode a message that contains errors.
+              If two codewords are “too similar” (have a small distance), then a small number of errors can make it impossible to decide which of the two is the correct way to decode a received message.
+            </p>
+
+            <p>
+              The minimum distance of a code can be thought of as describing the “worst case scenario” for decoding.
+            </p>
+
+            <theorem xml:id="thm1-eccpower">
+              <statement>
+                <p>
+                  If a code has minimum distance <m>d</m>, then it can correct up to <m>e = \lfloor\frac{d-1}{2}\rfloor</m> errors using nearest neighbor decoding.
+                </p>
+              </statement>
+            </theorem>
+
+            <proof>
+              <p>
+                Let <m>c</m> be any codeword, and suppose up to <m>\left\lfloor\frac{d-1}{2}\right\rfloor</m> errors occur to <m>c</m>, leaving us with message <m>m</m> that contains errors.
+                In other words,
+              </p>
+              <me xml:id="eq-2err">
+                d(c,m) \leq \left\lfloor\frac{d-1}{2}\right\rfloor.
+              </me>
+
+              <p>
+                Let <m>b \neq c</m> be any other codeword.
+                We will show that the distance between <m>b</m> and <m>m</m> is greater than the distance between <m>c</m> and <m>m</m>, which means that nearest neighbor decoding will choose <m>c</m> as the correct message.
+              </p>
+
+              <p>
+                We know that <m>d(c,b) \geq d</m> because every pair of codewords differ in at least <m>d</m> positions.
+                Using this fact and the triangle inequality,
+                <me>
+                  d \leq d(c,b) \leq d(c,m) + d(m,b).
+                </me>
+                Using equation eq:2err, we obtain:
+                <me>
+                  d \leq \left\lfloor\frac{d-1}{2}\right\rfloor + d(m,b).
+                </me>
+                Rearranging, we have
+                <me>
+                  d(m,b) \geq d - \left\lfloor\frac{d-1}{2}\right\rfloor \geq \frac{d+1}{2}.
+                </me>
+                Notice that <m>\frac{d+1}{2}> \left\lfloor\frac{d-1}{2}\right\rfloor</m>.
+                Thus <m>m</m> is closer to <m>c</m> than to <m>b</m> for all other codewords <m>b</m>.
+                This means that <m>m</m> will be correctly decoded to <m>c</m> using nearest-neighbor decoding.
+              </p>
+            </proof>
+
+              <p>
+                (It is worth verifying each of the inequalities above carefully – they’re not obvious!)
+              </p>
+
+              <p>
+                This number <m>e</m> in Theorem <xref ref="thm1-eccpower" text="global" /> is referred to as the error-correcting power of the code, and we say that the code is an <m>e</m>-error correcting code.
+              </p>
+
+              <p>
+                Note in Theorem <xref ref="thm1-eccpower" text="global" /> that the phrase “can correct up to <m>e</m> errors” means that the code can <em>always</em> correct <em>any</em> pattern of <m>e</m> or fewer errors, regardless of which codeword they occur in, or where they occur within the word.
+                If there is even just <em>one</em> pattern of <m>e</m> errors in <em>one</em> codeword that cannot be correctly decoded, then the code cannot correct <m>e</m> errors.
+              </p>
+
+              <p>
+                Two very common ways to apply Theorem <xref ref="thm1-eccpower" text="global" /> are stated in this corollary:
+              </p>
+
+              <corollary>
+                <statement>
+                  <p>
+                    A code with <m>d \geq 3</m> can correct 1 error, and a code with <m>d \lt 3</m> cannot correct any errors.
+                  </p>
+                </statement>
+              </corollary>
+
+              <p>
+                Also note that, due to the floor in Theorem <xref ref="thm1-eccpower" text="global" />, codes with sequential odd and even distances, such as <m>d = 3</m> and <m>d = 4</m>, can correct exactly the same number of errors.
+                We usually aim for the lower odd values when creating codes, since these are (to some extent) more “efficient”.
+              </p>
+
+              <p>
+                We end with a bit of notation.
+                A binary block code <m>C : \mathbb{Z}_{2}^{k}\to \mathbb{Z}_{2}^{n}</m> which has minimum distance <m>d</m> and which contains <m>M</m> codewords is called a <m>(n,M,d)</m> code.
+                For example, the “2-to-5 code” in Figure <xref ref="ex1-2to5" text="global" /> is a <m>(5,4,3)</m> code.
+                The 3-repetition code is a <m>(3,2,3)</m> code.
+              </p>
+            </subsubsection>
+          </subsection>
+
+          <exercises>
+            <title>Homework</title>
+
+            <p>
+              <alert>Computational problems (do <em>one</em>):</alert>
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  The following message was first written in UTF-8, and then encoded using the 3-repetition code from class.
+                  Decode it and write the final message, showing all steps along the way.
+                </p>
+
+                <p>
+                  <em> 000101000111011100000111001111000010000111000111000101000111000000011110</em>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If possible, create a <m>(4,4,3)</m> code and explain why it has those parameters.
+                  If impossible, explain why it can’t be done.
+                  <em>Hint:</em> For simplicity, you can assume the code includes codeword 0000 (why?).
+                </p>
+              </li>
+            </ol>
+
+            <p>
+              <alert>Conceptual problems (do this one):</alert>
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  Let <m>n > 0</m> be an integer.
+                  Complete the statement of the following theorem, in terms of <m>n</m>, and then write a proof:
+                </p>
+
+                <p>
+                  <alert>Theorem:</alert> For any integer <m>n \geq 1</m>, the <m>n</m>-repetition code <m>R_{n}</m> has rate <em>    </em>. It can correct up to <em>    </em> errors, and can detect up to <em>    </em> errors.
+                </p>
+
+                <p>
+                  Be sure to account for the fact that <m>n</m> may be even!
+                </p>
+              </li>
+            </ol>
+        </exercises>
+
+</section>

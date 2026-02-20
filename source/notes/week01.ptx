@@ -12,14 +12,56 @@
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
   <subsection>
     <title>Monday 8/22</title>
-
     <p>
+
     </p>
   </subsection>
 
 
   <subsection>
     <title>Wednesday 8/24</title>
+
+<ol>
+  <li>
+    <p>
+      The region bounded by <m>y = \sqrt{x}</m> and the <m>x</m>-axis between <m>x = 0</m> and <m>x = 4</m>.
+      Rotate around the <m>x</m>-axis.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The region bounded by <m>y = \sqrt{x}</m>, the <m>y</m>-axis, and <m>y = 4</m>.
+      Rotate around the <m>y</m>-axis.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The region bounded by <m>y = \sqrt{x}</m> and the <m>x</m>-axis between <m>x = 0</m> and <m>x = 4</m>.
+      Rotate around the <m>y</m>-axis.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The region enclosed by <m>y = \sqrt{x}</m> and <m>y = x^{4}</m>.
+      Rotate around the line <m>y = 5</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Challenge 1: Repeat #4, but rotate around the line <m>y = -5</m>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Challenge 2: The 3D shape whose cross sections perpendicular to the <m>x</m>-axis are squares with side length <m>\sqrt{x}</m>, from <m>x = 1</m> to <m>x = 4</m>.
+    </p>
+  </li>
+</ol>
 
     <p>
     </p>

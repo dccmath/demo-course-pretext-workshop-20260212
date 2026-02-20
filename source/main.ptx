@@ -13,6 +13,13 @@
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
+
+    <chapter xml:id="chap-intro">
+      <title>Introduction to Information and Codes</title>
+
+      <xi:include href="./chapters/chap1.ptx" />
+    </chapter>
+    
     <chapter xml:id="course-documents">
       <title>Course Documents</title>
 
