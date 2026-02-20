@@ -341,9 +341,9 @@
               <tabular>
                 <col halign="center" /> <col halign="center" /> <col halign="center" />
                 <row>
-                  <cell> <em>00</em> </cell>
+                  <cell> <c>00</c> </cell>
                   <cell> <m>\longleftrightarrow</m> </cell>
-                  <cell> <m>\mathtt{00000}</m> </cell>
+                  <cell> <c>00000</c> </cell>
                 </row>
 
                 <row>
