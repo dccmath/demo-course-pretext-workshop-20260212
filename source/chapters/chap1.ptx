@@ -271,10 +271,11 @@
       <subsubsection>
         <title>Basic definitions</title>
         <definition xml:id="def-code">
+          <title>Code, codeword, message, source word</title>
           <statement>
             <p>
-              Let <m>S</m> be a set of symbols called messages or source words, and <m>W</m> be a set of symbols called codewords.
-              A code <m>C</m> is a bijective function <m>C : S \to W</m>.
+              Let <m>S</m> be a set of symbols called <term>messages</term> or <term>source words</term>, and <m>W</m> be a set of symbols called <term>codewords</term>.
+              A <term>code</term> <m>C</m> is a bijective function <m>C : S \to W</m>.
             </p>
           </statement>
         </definition>
