@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="My PreTeXt Course">
+<meta property="book:author" content="David Clark">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.15';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">My PreTeXt Course</span> <span class="subtitle">PTX 101 Spring 2026</span></a></h1>
+<p class="byline">David Clark</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="chap-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap-intro.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="course-documents.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chap-intro.html" class="internal"><span class="title">Introduction to Information and Codes</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="chap-intro-2.html" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-2" class="internal"><span class="title">Your first daily prep</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-3" class="internal"><span class="title">Class notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-3-2" class="internal"><span class="title">Basic definitions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-3-3" class="internal"><span class="title">Detecting errors with parity check bits</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-3-4" class="internal"><span class="title">Correcting errors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap-intro-2.html#chap-intro-2-4" class="internal"><span class="title">Homework</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies" class="internal"><span class="title">Course Policies</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Part 1</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="chap-intro-2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"></span>
+</h2>
+<section class="introduction" id="chap-intro-2-1"><div class="para" id="chap-intro-2-1-1">Welcome to Error-Correction and Information! Each class will correspond to a chapter in this book. Before class, I will post the “Daily prep” section. Read it carefully, complete the best answers you can for the Questions, and bring your work to class. Start about 24 hours before class – that gives the right balance between being able to remember new ideas, and having enough time to let them “settle in” before class.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-1-2">
+<em class="alert">Questions.</em> Each daily prep will have some questions for you to answer. Your goal is to make as much progress on these as possible. Take time to think through them and do your best, but it is OK to be wrong. You are always welcome to collaborate with others in this class on the questions. Please give clear credit for ideas by writing your collaborators’ names on the page.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-1-3">After class, I will post a complete set of class notes with more formal definitions, based on what we did in class. Part of your assignment for subsequent classes will be to read the class notes from the previous class.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="chap-intro-2-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Your first daily prep</span>
+</h3>
+<div class="para" id="chap-intro-2-2-2">This class is about information. For our purposes, “information” means any idea that can be communicated to another person in some concrete form. For example, an email contains written information, as does a text message. A Word document, a PDF, or a spreadsheet are also information. We aren’t limited to writing: Photos are information, as are audio recordings. There are many other kinds of information – take a moment to try to come up with some.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-2-3">Because information involves another person, you must transmit that information in some way: Mailing a letter, carving into a stone tablet, or – most likely – using a computer. Computers include tablets, phones, GPS devices, and anything electronic that has the ability to send a signal.Each individual piece of information that we transmit is called a message.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-2-4">A key feature of a computer is that it can only work with and transmit numbers. So, every message we transmit must be somehow written using numbers.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="fig-1simplecode" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="fig-1simplecode-1">For example, take this simple rule for turning capital letters and the space character into numbers:<div class="autopermalink" data-description="Paragraph"><a href="#fig-1simplecode-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="fig-1simplecode-2">
+<code class="code-inline tex2jax_ignore">A = 0  B = 1  C = 2  ...  Y = 24  Z = 25  space = 26</code><div class="autopermalink" data-description="Paragraph"><a href="#fig-1simplecode-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1"><a href="#fig-1simplecode" title="Copy heading and permalink for Example 1" aria-label="Copy heading and permalink for Example 1">🔗</a></div></article></details><div class="para" id="chap-intro-2-2-6">This is an example of a code, which is simply a rule that specifies how to write a message using numbers. In everyday language, “code” often implies secrecy and spies, but that’s not the case here. Think of a code as an attempt to make a message <em class="emphasis">more understandable</em> to a computer. Codes that involve secrecy are usually called “ciphers” or “cryptosystems”. We won’t study those in this class.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-2-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-2-7-1-1">The message “HI” is encoded as “7, 8”. If someone sends you “7, 8, 26, 24, 14, 20”, you can decode it to get the message “HI YOU”. Notice how we had to use the 26 to write a space between words – only numbers can be transmitted, so if we don’t encode the space as a number, we end up with “HIYOU”, which is somewhat less than ideal.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2"><a href="#chap-intro-2-2-7" title="Copy heading and permalink for Example 2" aria-label="Copy heading and permalink for Example 2">🔗</a></div></article></details><details id="chap-intro-2-2-8" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-8-1-1">Decode “12,0,19,7,26,8,18,26,5,20,13”. Then encode a short word or phrase of your choosing (<em class="emphasis">don’t</em> write down its “plain” or unencoded form on the sheet you bring to class).<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 3"><a href="#chap-intro-2-2-8" title="Copy heading and permalink for Question 3" aria-label="Copy heading and permalink for Question 3">🔗</a></div></article></details><details id="chap-intro-2-2-9" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-9-1-1">Our first code only deals with capital letters and spaces. What else might you want to include in this code, in order to be able to send useful text messages? Design and write down a rule that includes everything you think you will need for a written message. Encode a message that makes use of your additional symbols.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 4"><a href="#chap-intro-2-2-9" title="Copy heading and permalink for Question 4" aria-label="Copy heading and permalink for Question 4">🔗</a></div></article></details><div class="para" id="chap-intro-2-2-10">Here’s another example of a code. The code in Figure <a href="chap-intro-2.html#fig-1utf8" class="xref" data-knowl="./knowl/xref/fig-1utf8.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 5">5</a> is called “Unicode Transformation Format 8-bit”, or just “UTF-8”. This code is used by the vast majority of everything on the Internet (including web pages, emails, text messages, so on). In UTF-8, each letter is represented by 8 bits (a 1 or a 0). Each of these 8 bit encoded messages is called a codeword.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="fig-1utf8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 5"><a href="#fig-1utf8" title="Copy heading and permalink for Table 5" aria-label="Copy heading and permalink for Table 5">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+<td class="c m b0 r1 l0 t0 lines">01000001</td>
+<td class="c m b0 r0 l0 t0 lines">J</td>
+<td class="c m b0 r1 l0 t0 lines">01001010</td>
+<td class="c m b0 r0 l0 t0 lines">S</td>
+<td class="c m b0 r0 l0 t0 lines">01010011</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r1 l0 t0 lines">01000010</td>
+<td class="c m b0 r0 l0 t0 lines">K</td>
+<td class="c m b0 r1 l0 t0 lines">01001011</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">01010100</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+<td class="c m b0 r1 l0 t0 lines">01000011</td>
+<td class="c m b0 r0 l0 t0 lines">L</td>
+<td class="c m b0 r1 l0 t0 lines">01001100</td>
+<td class="c m b0 r0 l0 t0 lines">U</td>
+<td class="c m b0 r0 l0 t0 lines">01010101</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">D</td>
+<td class="c m b0 r1 l0 t0 lines">01000100</td>
+<td class="c m b0 r0 l0 t0 lines">M</td>
+<td class="c m b0 r1 l0 t0 lines">01001101</td>
+<td class="c m b0 r0 l0 t0 lines">V</td>
+<td class="c m b0 r0 l0 t0 lines">01010110</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">E</td>
+<td class="c m b0 r1 l0 t0 lines">01000101</td>
+<td class="c m b0 r0 l0 t0 lines">N</td>
+<td class="c m b0 r1 l0 t0 lines">01001110</td>
+<td class="c m b0 r0 l0 t0 lines">W</td>
+<td class="c m b0 r0 l0 t0 lines">01010111</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">01000110</td>
+<td class="c m b0 r0 l0 t0 lines">O</td>
+<td class="c m b0 r1 l0 t0 lines">01001111</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">01011000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">G</td>
+<td class="c m b0 r1 l0 t0 lines">01000111</td>
+<td class="c m b0 r0 l0 t0 lines">P</td>
+<td class="c m b0 r1 l0 t0 lines">01010000</td>
+<td class="c m b0 r0 l0 t0 lines">Y</td>
+<td class="c m b0 r0 l0 t0 lines">01011001</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">H</td>
+<td class="c m b0 r1 l0 t0 lines">01001000</td>
+<td class="c m b0 r0 l0 t0 lines">Q</td>
+<td class="c m b0 r1 l0 t0 lines">01010001</td>
+<td class="c m b0 r0 l0 t0 lines">Z</td>
+<td class="c m b0 r0 l0 t0 lines">01011010</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">I</td>
+<td class="c m b0 r1 l0 t0 lines">01001001</td>
+<td class="c m b0 r0 l0 t0 lines">R</td>
+<td class="c m b0 r1 l0 t0 lines">01010010</td>
+<td class="c m b0 r0 l0 t0 lines">(space)</td>
+<td class="c m b0 r0 l0 t0 lines">00100000</td>
+</tr>
+</table></div></figure><div class="para" id="chap-intro-2-2-12">Be careful: In Figure <a href="chap-intro-2.html#fig-1utf8" class="xref" data-knowl="./knowl/xref/fig-1utf8.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 5">5</a>, we’ve only shown part of UTF-8 – there are many other symbols that would make this code listing too large to fit on this page. For example, <code class="code-inline tex2jax_ignore">01100001</code> represents the lowercase letter “a”, and <code class="code-inline tex2jax_ignore">00100001</code> represents an exclamation point “!”. UTF-8 includes codewords for all English letters, digits, and many punctuation marks.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-2-13">Up until now, we have been lying a bit. In our first code, we put commas between numbers. But a computer can <em class="emphasis">only</em> use numbers to communicate. Commas, spaces, and other ways of dividing numbers into groups are right out. So, we must smash together all of the codewords we want to transmit.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-2-14" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-14-1-1">Suppose you receive this message which is encoded with UTF-8: <code class="code-inline tex2jax_ignore"> 0101001101001101010010010100110001000101 </code> Show how to decode it into a common English word.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 6"><a href="#chap-intro-2-2-14" title="Copy heading and permalink for Question 6" aria-label="Copy heading and permalink for Question 6">🔗</a></div></article></details><details id="chap-intro-2-2-15" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-15-1-1">Encode a short word or phrase of your choosing with UTF-8.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 7"><a href="#chap-intro-2-2-15" title="Copy heading and permalink for Question 7" aria-label="Copy heading and permalink for Question 7">🔗</a></div></article></details><div class="para" id="chap-intro-2-2-16">In this class, we will almost always work with binary codes, that is, codes that use only 0’s and 1’s. Furthermore, our codes will (for now) always be block codes, in which each codeword has the same number of bits (8, for UTF-8). “Our first code” (Figure <a href="chap-intro-2.html#fig-1simplecode" class="xref" data-knowl="./knowl/xref/fig-1simplecode.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1">1</a>) is <em class="emphasis">not</em> a block code, because some codewords use 1 digit, and others use 2 digits. The next question shows why block codes are important.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-2-17" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-17-1-1">Suppose we are using “our first code” (Figure <a href="chap-intro-2.html#fig-1simplecode" class="xref" data-knowl="./knowl/xref/fig-1simplecode.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1">1</a>). You receive this encoded message with all codewords smashed together: <code class="code-inline tex2jax_ignore"> 0117020301170 </code> Find at least two different decodings of this. That is, find two different messages that would both encode to this same number. Why is this a problem? Why <em class="emphasis">can’t</em> this happen with UTF-8?<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 8"><a href="#chap-intro-2-2-17" title="Copy heading and permalink for Question 8" aria-label="Copy heading and permalink for Question 8">🔗</a></div></article></details><div class="para" id="chap-intro-2-2-18">So far, we’ve only focused on information. What about the “error-correction” part of the class’s name? Computer transmissions almost always involve errors, which happen when one bit is “flipped” from a 0 to 1 or vice versa. This can be caused by static, faulty wiring, lightning, cosmic rays, inconveniently placed birds, or anything else that interferes with the transmission.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-2-19" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="chap-intro-2-2-19-1-1">Suppose you receive this message in UTF-8: <code class="code-inline tex2jax_ignore">01011110</code>. You can’t decode it – why not? In this message, there has been an error: <em class="emphasis">One</em> of the bits was flipped from 0 to 1 or vice versa. With this information, what might the original message have been? List as many possibilities as you can find using Figure <a href="chap-intro-2.html#fig-1utf8" class="xref" data-knowl="./knowl/xref/fig-1utf8.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 5">5</a>. For each possibility, indicate where the error happened, and what the correct decoding would be.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 9"><a href="#chap-intro-2-2-19" title="Copy heading and permalink for Question 9" aria-label="Copy heading and permalink for Question 9">🔗</a></div></article></details><div class="para" id="chap-intro-2-2-20">In this last question, you should be able to find several different “correct” decodings, depending on where the error occurred. How can you choose which of these is the right one? Much of this class will be focused on answering this question.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-2-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Your first daily prep"><a href="#chap-intro-2-2" title="Copy heading and permalink for Subsection: Your first daily prep" aria-label="Copy heading and permalink for Subsection: Your first daily prep">🔗</a></div></section><section class="subsection" id="chap-intro-2-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Class notes</span>
+</h3>
+<section class="subsubsection" id="chap-intro-2-3-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic definitions</span>
+</h4>
+<article class="definition definition-like" id="def-code"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="def-code-1-1">Let <span class="process-math">\(S\)</span> be a set of symbols called messages or source words, and <span class="process-math">\(W\)</span> be a set of symbols called codewords. A code <span class="process-math">\(C\)</span> is a bijective function <span class="process-math">\(C : S \to W\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-code-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 10"><a href="#def-code" title="Copy heading and permalink for Definition 10" aria-label="Copy heading and permalink for Definition 10">🔗</a></div></article><div class="para" id="chap-intro-2-3-2-3">We say that message <span class="process-math">\(m \in S\)</span> is encoded to <span class="process-math">\(C(m)\text{.}\)</span> Because <span class="process-math">\(C\)</span> is bijective, it has an inverse. Thus if we receive the codeword <span class="process-math">\(w \in W\text{,}\)</span> we can decode it to get the source word <span class="process-math">\(C^{-1}(w)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap-intro-2-3-2-4">
+<div class="para">However, we will often focus <em class="emphasis">only</em> on the codewords in a code, for reasons which we will explain soon. Thus we often treat a code <span class="process-math">\(C\)</span> as the same thing as its set of codewords. That is (abusing terminology by using “C” twice):</div>
+<div class="displaymath process-math" id="chap-intro-2-3-2-4-3">
+\begin{equation*}
+C = \{ C(m) : m \in S \}.
+\end{equation*}
+</div>
+<div class="para">So, for example, if we write “<span class="process-math">\(w \in C\)</span>”, this means that <span class="process-math">\(w\)</span> is a codeword of <span class="process-math">\(C\)</span> (and that we are ignoring its corresponding message).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-2-5">Once a message is encoded into a codeword, it is transmitted through a channel which may change the codeword. The process that changes symbols in a transmitted codeword is called noise. The result is called a received message, which is then decoded to give us a decoded message. Hopefully, the decoded message is the same as the source word, but the errors introduced by noise in the channel may make this impossible! This process is represented by the diagram in Figure <a href="chap-intro-2.html#fig1-transmitgeneric" class="xref" data-knowl="./knowl/xref/fig1-transmitgeneric.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11">11</a>. A more concrete example, with a code and codeword, is in Figure <a href="chap-intro-2.html#fig1-transmitexample" class="xref" data-knowl="./knowl/xref/fig1-transmitexample.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 12">12</a>.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig1-transmitgeneric"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/fig1-generictransmit.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 11"><a href="#fig1-transmitgeneric" title="Copy heading and permalink for Figure 11" aria-label="Copy heading and permalink for Figure 11">🔗</a></div></figcaption></figure><figure class="figure figure-like" id="fig1-transmitexample"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/fig1-transmitex.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 12"><a href="#fig1-transmitexample" title="Copy heading and permalink for Figure 12" aria-label="Copy heading and permalink for Figure 12">🔗</a></div></figcaption></figure><div class="para" id="chap-intro-2-3-2-8">As the diagrams show, errors in transmission can be a major problem. An error is simply any change that occurs to the codeword as it moves through the channel. This can range from a bit flip (a single 0 changes to 1, or vice versa) to a complete change of the entire codeword.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-2-9">We will generally study binary codes, in which the codewords consist only of binary digits (bits, 0 or 1). We will also focus on block codes, in which every codeword has the same number of digits, called its length. We will often use the notation <span class="process-math">\(\{0,1\}^{n}\)</span> or <span class="process-math">\(\mathbb{Z}_{2}^{n}\)</span> to represent the set of all binary strings of length <span class="process-math">\(n\text{.}\)</span> These are also called vectors, tuples, or points.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex1-2to5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="ex1-2to5-1-1">Here is a “2-to-5” code <span class="process-math">\(C\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex1-2to5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex1-2to5-1-2">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><em class="emphasis">00</em></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longleftrightarrow\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\mathtt{00000}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><em class="emphasis">01</em></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longleftrightarrow\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\mathtt{01011}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><em class="emphasis">10</em></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longleftrightarrow\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\mathtt{10101}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><em class="emphasis">11</em></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\longleftrightarrow\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\mathtt{11110}\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex1-2to5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex1-2to5-1-3">The set of source words are <span class="process-math">\(S = \{00,01,10,11\}\text{.}\)</span> We can also write this as <span class="process-math">\(S = \mathbb{Z}_{2}^{2}\text{.}\)</span> The set of codewords is <span class="process-math">\(W = \{00000,01011,10101,11110\}\text{.}\)</span> Note that <span class="process-math">\(W \subseteq \mathbb{Z}_{2}^{5}\text{,}\)</span> but <span class="process-math">\(W \neq \mathbb{Z}_{2}^{5}\text{.}\)</span> We write the code as a table with double arrows <span class="process-math">\(\longleftrightarrow\)</span> to emphasize the fact that every source word corresponds to exactly one codeword, and vice versa (that is, the code is a bijective function). We can describe this code as a “binary block code with block length 5”.<div class="autopermalink" data-description="Paragraph"><a href="#ex1-2to5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 13"><a href="#ex1-2to5" title="Copy heading and permalink for Example 13" aria-label="Copy heading and permalink for Example 13">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-2-11">There are two basic ways to handle errors: <em class="emphasis">detect</em> them (that is, determine that they’ve happened) and request a retransmission. Or, <em class="emphasis">correct</em> the error ourselves without asking the sender for any more information.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Basic definitions"><a href="#chap-intro-2-3-2" title="Copy heading and permalink for Subsubsection: Basic definitions" aria-label="Copy heading and permalink for Subsubsection: Basic definitions">🔗</a></div></section><section class="subsubsection" id="chap-intro-2-3-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Detecting errors with parity check bits</span>
+</h4>
+<div class="para" id="chap-intro-2-3-3-2">A common way to detect errors is the parity check bit. This is simply an extra bit (0 or 1) placed at the end of a codeword. The sender chooses the parity check bit so that the number of 1’s in the codeword is even. The receiver knows this convention and uses it to detect some errors.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-3-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-3-3-3-1-1">Using UTF-8 (Figure <a href="chap-intro-2.html#fig-1utf8" class="xref" data-knowl="./knowl/xref/fig-1utf8.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 5">5</a>), suppose we want to send the message “SMILE” (as you did in the daily prep). We encode the message one letter at a time. For each letter, we look at each codeword and determine the number of 1’s already in it. We add a single extra bit so that the total number of 1’s is now even.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-3-3-1-2">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">letter</td>
+<td class="c m b0 r0 l0 t0 lines">codeword</td>
+<td class="c m b0 r0 l0 t0 lines">number of 1’s</td>
+<td class="c m b0 r0 l0 t0 lines">parity check bit</td>
+<td class="c m b0 r0 l0 t0 lines">final codeword</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">S</td>
+<td class="c m b0 r0 l0 t0 lines">01010011</td>
+<td class="c m b0 r0 l0 t0 lines">even</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">010100110</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">M</td>
+<td class="c m b0 r0 l0 t0 lines">01001101</td>
+<td class="c m b0 r0 l0 t0 lines">even</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">010011010</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">I</td>
+<td class="c m b0 r0 l0 t0 lines">01001001</td>
+<td class="c m b0 r0 l0 t0 lines">odd</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">010010011</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">L</td>
+<td class="c m b0 r0 l0 t0 lines">01001100</td>
+<td class="c m b0 r0 l0 t0 lines">odd</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">010011001</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">E</td>
+<td class="c m b0 r0 l0 t0 lines">01000101</td>
+<td class="c m b0 r0 l0 t0 lines">odd</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">010001011</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-3-3-1-3">Then we concatenate all of the codewords into one long string and transmit it: <code class="code-inline tex2jax_ignore">&gt; 010100110010011010010010011010011001010001011 </code><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-3-3-1-4">The channel causes some errors, so the receiver gets this received message: <code class="code-inline tex2jax_ignore"> 010101110 010011010 010010011 010011000 010001011 </code><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-3-3-1-5">The receiver, knowing to expect codewords of 9 bits each, splits apart the message. The receiver knows that they should find an even number of 1’s in each message. They verify (“check”) this: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">received word</td>
+<td class="c m b0 r0 l0 t0 lines">number of 1’s</td>
+<td class="c m b0 r0 l0 t0 lines">checks?</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">010101110</td>
+<td class="c m b0 r0 l0 t0 lines">odd</td>
+<td class="c m b0 r0 l0 t0 lines">no</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">010011010</td>
+<td class="c m b0 r0 l0 t0 lines">even</td>
+<td class="c m b0 r0 l0 t0 lines">yes</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">010010011</td>
+<td class="c m b0 r0 l0 t0 lines">even</td>
+<td class="c m b0 r0 l0 t0 lines">yes</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">010011000</td>
+<td class="c m b0 r0 l0 t0 lines">odd</td>
+<td class="c m b0 r0 l0 t0 lines">no</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">010001011</td>
+<td class="c m b0 r0 l0 t0 lines">even</td>
+<td class="c m b0 r0 l0 t0 lines">yes</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-3-3-1-6">Now the receiver knows that something went wrong in the 1st and 4th letters. Importantly, they can’t be sure <em class="emphasis">which</em> bit is wrong (you saw an example of this in the daily prep, question 6). So, the receiver asks the sender to retransmit each incorrect letter, and they repeat this process until each received message checks.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-3-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 14"><a href="#chap-intro-2-3-3-3" title="Copy heading and permalink for Example 14" aria-label="Copy heading and permalink for Example 14">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-3-4">Because we are viewing this example from “above” and can see the sender’s intended message, we know that the first letter had a genuine error (in the 6th bit). But the 4th letter had an error in the parity check (9th bit). Thus the “data” (first 8 bits) contained in the 4th letter is correct. But, the receiver has no way of knowing this, so they end up requesting a retransmission of the 4th letter anyhow. Any time we add extra bits in to a message, we give errors another place to occur. Thus, our general goal is to add as few extra bits as possible.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-3-5">Parity check bits are extremely easy to find and use, but all they can do is tell you that something went wrong – they can’t tell you <em class="emphasis">what</em> went wrong, nor how to <em class="emphasis">fix</em> any errors. This makes parity check bits widely used in situations where it’s easy to request a retransmission. Examples of this include short-length computer wiring in walls, communications between a mouse and a computer, and bar codes. For example, when a bar code fails to scan at a store, you can just re-scan it, or type in the number manually. A non-example includes photos transmitted by a Mars orbiter, which take minutes or even hours to send and can’t easily be retransmitted.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Detecting errors with parity check bits"><a href="#chap-intro-2-3-3" title="Copy heading and permalink for Subsubsection: Detecting errors with parity check bits" aria-label="Copy heading and permalink for Subsubsection: Detecting errors with parity check bits">🔗</a></div></section><section class="subsubsection" id="chap-intro-2-3-4"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correcting errors</span>
+</h4>
+<div class="para" id="chap-intro-2-3-4-2">Next, we look at some ways to actually correct errors. The goal is to give the receiver a way to determine the intended message, <em class="emphasis">without</em> needing a retransmission. Most of this class will be spent developing more complex and effective codes that can correct errors, but first we will start with a small example to demonstrate that error-correction is possible.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-3">The <span class="process-math">\(n\)</span>-repetition code <span class="process-math">\(R_{n}\)</span> is the code in which each bit of the source word is repeated <span class="process-math">\(n\)</span> times. More formally, <span class="process-math">\(R_{n}: \mathbb{Z}_{2}\to \mathbb{Z}_{2}^{n}\)</span> such that <span class="process-math">\(R_{n}(m) = mmm\cdots m\)</span> (<span class="process-math">\(n\)</span> times). For example, the 3-repetition code <span class="process-math">\(R_{3}\)</span> is given in Figure <div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-4-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="chap-intro-2-3-4-4-1-1">
+<div class="para">We will encode the UTF-8 message “S” (01010011) using the 3-repetition code:</div>
+<div class="displaymath process-math" id="chap-intro-2-3-4-4-1-1-1">
+\begin{equation*}
+01010011 \to 000111000111000000111111
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-4-1-2">This is transmitted, and the channel adds some errors:<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="chap-intro-2-3-4-4-1-3">
+<div class="displaymath process-math" id="chap-intro-2-3-4-4-1-3-1">
+\begin{equation*}
+000110000111001000101111
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-4-1-4">In each block of 3 bits, we determine whether 0 or 1 is in the majority and use that “majority vote” to correct the errors:<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-4-1-5">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Block</td>
+<td class="c m b0 r0 l0 t0 lines">000</td>
+<td class="c m b0 r0 l0 t0 lines">110</td>
+<td class="c m b0 r0 l0 t0 lines">000</td>
+<td class="c m b0 r0 l0 t0 lines">111</td>
+<td class="c m b0 r0 l0 t0 lines">001</td>
+<td class="c m b0 r0 l0 t0 lines">000</td>
+<td class="c m b0 r0 l0 t0 lines">101</td>
+<td class="c m b0 r0 l0 t0 lines">111</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Majority</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-4-1-6">Thus we correctly decode the message as <code class="code-inline tex2jax_ignore">01010011</code>.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-4-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 15"><a href="#chap-intro-2-3-4-4" title="Copy heading and permalink for Example 15" aria-label="Copy heading and permalink for Example 15">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-4-5">A 3-repetition code can correct 1 error per block of 3 bits. However, if 2 errors occur within a block, we would “correct” the message incorrectly (that is, if 000 becomes 101 due to two errors, we would think that 101 was really 111 with a single error). This shows that the 3-repetition code can only correct 1 error per block, and no more. We can generalize this to other <span class="process-math">\(n\)</span>-repetition codes – see the exercises.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-6">A word on terminology: Up until now, we have used codes which have letters as the possible messages, and binary strings as their codewords. In the example above, we used the code UTF-8 to encode “S” to “01010011”. However, then we applied a <em class="emphasis">second</em> code, the 3-repetition code, to this already encoded message. The 3-repetition code’s messages are just individual bits: 0 or 1. The code words are 3 bits: 000 or 111. Thus we really have two layers of source and codewords.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-7">To simplify this, we only focus on one layer at a time. In this case, we are most interested in the error-correcting layer. Thus, we don’t worry about how “S” got turned into “01010011” (unless we are focusing on that aspect). Instead, we simply assume that the sender wants to send the source message “01010011” (for whatever reason), and then apply the 3-repetition code directly to this message.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-8">Next we build up some concepts related to determining how “good” an error-correcting code is.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-9">One thing to notice about the repetition codes are that they are very inefficient. Every bit is blown up into <span class="process-math">\(n\)</span> copies of the same bit. Thus only 1 out of every <span class="process-math">\(n\)</span> bits of each codeword is actually meaningful, and the rest is extra copies.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-10">Suppose <span class="process-math">\(C : \mathbb{Z}_{2}^{k}\to \mathbb{Z}_{2}^{n}\)</span> is a block code. Recall that this means that the code converts <span class="process-math">\(k\)</span>-bit messages into <span class="process-math">\(n\)</span>-bit codewords. The rate of <span class="process-math">\(C\)</span> is defined to be <span class="process-math">\(\frac{k}{n}\text{.}\)</span> You can informally think of the rate as being the length of the source words divided by the length of the codewords.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-4-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-3-4-11-1-1">The 3-repetition code can be seen as a map from <span class="process-math">\(\mathbb{Z}_{2}^{1}\)</span> to <span class="process-math">\(\mathbb{Z}_{2}^{3}\text{.}\)</span> Thus <span class="process-math">\(k = 1\text{,}\)</span> which indicates that the source words are just 1 digit long (0 and 1). We have <span class="process-math">\(n = 3\text{,}\)</span> meaning that the codewords (000 and 111) are each 3 digits long. Thus the rate of the 3-repetition code is <span class="process-math">\(R = \frac{1}{3}\text{.}\)</span> We can interpret this as saying that only <span class="process-math">\(\frac{1}{3}\approx 33\%\)</span> of each codeword contains actual information, while the rest is added redundancy.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 16"><a href="#chap-intro-2-3-4-11" title="Copy heading and permalink for Example 16" aria-label="Copy heading and permalink for Example 16">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-4-12">The number of nonzero coordinates in a codeword <span class="process-math">\(c\)</span> is called the Hamming weight of <span class="process-math">\(c\)</span> and is denoted <span class="process-math">\(\wt(c)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-4-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-3-4-13-1-1">The Hamming weight of <span class="process-math">\(0010111\)</span> is 4, because there are 4 positions that don’t contain a 0. We write <span class="process-math">\(\wt(0010111) = 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 17"><a href="#chap-intro-2-3-4-13" title="Copy heading and permalink for Example 17" aria-label="Copy heading and permalink for Example 17">🔗</a></div></article></details><div class="para logical" id="chap-intro-2-3-4-14">
+<div class="para">The Hamming distance between two codewords <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> denoted <span class="process-math">\(d(a,b)\)</span> is the number of coordinates in which the codewords differ. The minimum distance of a code <span class="process-math">\(C\)</span> is defined to be:</div>
+<div class="displaymath process-math" id="chap-intro-2-3-4-14-5">
+\begin{equation*}
+d(C) = \min \{ d(a,b) : a, b \in C \text{ and }a \neq b\}.
+\end{equation*}
+</div>
+<div class="para">In other words, the minimum distance is the smallest distance between any two different codewords in the code. We never compare the distance of a codeword to itself, because <span class="process-math">\(d(a,a) = 0\)</span> always.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-15">Note that Hamming distance and minimum distance only make sense for codewords that have the same number of bits. Thus, from this point on, we will always assume that we are working with a block code (unless otherwise stated).<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-4-16" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-3-4-16-1-1">Consider the 2-to-5 code <span class="process-math">\(C\)</span> (it is listed in Example <a href="chap-intro-2.html#ex1-2to5" class="xref" data-knowl="./knowl/xref/ex1-2to5.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 13">13</a>). We have <span class="process-math">\(d(01011,10101) = 4\text{,}\)</span> because these words differ in 4 positions (the only position they don’t differ in is the last coordinate). We also have <span class="process-math">\(d(11110,01011) = 3\)</span> and <span class="process-math">\(d(00000,01011) = 3\text{.}\)</span> If we calculate the distance between every pair of distinct words, we find that the smallest value is 3. Thus the minimum distance of <span class="process-math">\(C\)</span> is <span class="process-math">\(d(C) = 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 18"><a href="#chap-intro-2-3-4-16" title="Copy heading and permalink for Example 18" aria-label="Copy heading and permalink for Example 18">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-4-17">The process of decoding that we have seen so far is called nearest-neighbor decoding. In this form of decoding, a received word <span class="process-math">\(w\)</span> is compared against all possible codewords. Calculate the distance <span class="process-math">\(d(w,c)\)</span> for each codeword <span class="process-math">\(c\text{.}\)</span> To choose the correct decoding of <span class="process-math">\(w\text{,}\)</span> pick the codeword <span class="process-math">\(c\)</span> for which <span class="process-math">\(d(w,c)\)</span> is minimum.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-18">This is the same as the decoding algorithm that we saw for the 3-repetition code. You can think of calculating <span class="process-math">\(d(w,000)\)</span> and <span class="process-math">\(d(w,111)\)</span> as getting “votes” for how different <span class="process-math">\(w\)</span> is from 000 and 111. The smaller the number of votes, the fewer differences, and hence the more similar the two words are. We choose to decode using the codeword with the fewest differences from <span class="process-math">\(w\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-19">Of course, this doesn’t work well if more than one codeword gives the same minimum value! We will discuss, in the future, how to design codes to ensure that there is always a unique “nearest neighbor”.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="chap-intro-2-3-4-20" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="chap-intro-2-3-4-20-1-1">Again using the 2-to-5 code <span class="process-math">\(C\)</span> from Example <a href="chap-intro-2.html#ex1-2to5" class="xref" data-knowl="./knowl/xref/ex1-2to5.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 13">13</a>: Suppose we receive <span class="process-math">\(r = 11101\text{.}\)</span> We calculate the distance <span class="process-math">\(d(r,c)\)</span> for each codeword <span class="process-math">\(c \in C\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex1-2to5.html" id="chap-intro-2-3-4-20-1-2">
+\begin{equation*}
+
+\end{equation*}
+</div>
+<div class="para" id="chap-intro-2-3-4-20-1-3">Thus the nearest neighbor to <span class="process-math">\(r\)</span> is <span class="process-math">\(10101\)</span> with distance 1, so we correct <span class="process-math">\(11101\)</span> to <span class="process-math">\(10101\text{,}\)</span> which means we decode <span class="process-math">\(11101\)</span> as <span class="process-math">\(10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-20-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-20-1-4">On the other hand, if we received <span class="process-math">\(r = 11000\text{,}\)</span> we could do the same calculations to get:<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-20-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex1-2to5.html" id="chap-intro-2-3-4-20-1-5">
+\begin{equation*}
+
+\end{equation*}
+</div>
+<div class="para" id="chap-intro-2-3-4-20-1-6">There are two different codewords that give the same minimum value of 2, which means that we don’t know how to decode <span class="process-math">\(r\text{.}\)</span> This shows that at least 2 errors must have occurred, and that this code can’t always correct 2 errors.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-20-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="chap-intro-2-3-4-20-1-7">Finally, notice that if we receive a codeword, such as <span class="process-math">\(r = 10101\text{,}\)</span> we will find the smallest distance to be 0.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-20-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 19"><a href="#chap-intro-2-3-4-20" title="Copy heading and permalink for Example 19" aria-label="Copy heading and permalink for Example 19">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-4-21">As the above example demonstrates, the distance between codewords determines whether it is possible to uniquely decode a message that contains errors. If two codewords are “too similar” (have a small distance), then a small number of errors can make it impossible to decide which of the two is the correct way to decode a received message.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-22">The minimum distance of a code can be thought of as describing the “worst case scenario” for decoding.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm1-eccpower"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="thm1-eccpower-1-1">If a code has minimum distance <span class="process-math">\(d\text{,}\)</span> then it can correct up to <span class="process-math">\(e = \lfloor\frac{d-1}{2}\rfloor\)</span> errors using nearest neighbor decoding.<div class="autopermalink" data-description="Paragraph"><a href="#thm1-eccpower-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 20"><a href="#thm1-eccpower" title="Copy heading and permalink for Theorem 20" aria-label="Copy heading and permalink for Theorem 20">🔗</a></div></article><details id="chap-intro-2-3-4-24" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="chap-intro-2-3-4-24-1">Let <span class="process-math">\(c\)</span> be any codeword, and suppose up to <span class="process-math">\(\left\lfloor\frac{d-1}{2}\right\rfloor\)</span> errors occur to <span class="process-math">\(c\text{,}\)</span> leaving us with message <span class="process-math">\(m\)</span> that contains errors. In other words,<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-24-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="eq-2err">
+\begin{equation*}
+d(c,m) \leq \left\lfloor\frac{d-1}{2}\right\rfloor.
+\end{equation*}
+</div>
+<div class="para" id="chap-intro-2-3-4-24-3">Let <span class="process-math">\(b \neq c\)</span> be any other codeword. We will show that the distance between <span class="process-math">\(b\)</span> and <span class="process-math">\(m\)</span> is greater than the distance between <span class="process-math">\(c\)</span> and <span class="process-math">\(m\text{,}\)</span> which means that nearest neighbor decoding will choose <span class="process-math">\(c\)</span> as the correct message.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-24-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap-intro-2-3-4-24-4">
+<div class="para">We know that <span class="process-math">\(d(c,b) \geq d\)</span> because every pair of codewords differ in at least <span class="process-math">\(d\)</span> positions. Using this fact and the triangle inequality,</div>
+<div class="displaymath process-math" id="chap-intro-2-3-4-24-4-3">
+\begin{equation*}
+d \leq d(c,b) \leq d(c,m) + d(m,b).
+\end{equation*}
+</div>
+<div class="para">Using equation eq:2err, we obtain:</div>
+<div class="displaymath process-math" id="chap-intro-2-3-4-24-4-4">
+\begin{equation*}
+d \leq \left\lfloor\frac{d-1}{2}\right\rfloor + d(m,b).
+\end{equation*}
+</div>
+<div class="para">Rearranging, we have</div>
+<div class="displaymath process-math" id="chap-intro-2-3-4-24-4-5">
+\begin{equation*}
+d(m,b) \geq d - \left\lfloor\frac{d-1}{2}\right\rfloor \geq \frac{d+1}{2}.
+\end{equation*}
+</div>
+<div class="para">Notice that <span class="process-math">\(\frac{d+1}{2}&gt; \left\lfloor\frac{d-1}{2}\right\rfloor\text{.}\)</span> Thus <span class="process-math">\(m\)</span> is closer to <span class="process-math">\(c\)</span> than to <span class="process-math">\(b\)</span> for all other codewords <span class="process-math">\(b\text{.}\)</span> This means that <span class="process-math">\(m\)</span> will be correctly decoded to <span class="process-math">\(c\)</span> using nearest-neighbor decoding.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-24-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 1"><a href="#chap-intro-2-3-4-24" title="Copy heading and permalink for Proof 1" aria-label="Copy heading and permalink for Proof 1">🔗</a></div></article></details><div class="para" id="chap-intro-2-3-4-25">(It is worth verifying each of the inequalities above carefully – they’re not obvious!)<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-26">This number <span class="process-math">\(e\)</span> in Theorem <a href="chap-intro-2.html#thm1-eccpower" class="xref" data-knowl="./knowl/xref/thm1-eccpower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 20">20</a> is referred to as the error-correcting power of the code, and we say that the code is an <span class="process-math">\(e\)</span>-error correcting code.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-27">Note in Theorem <a href="chap-intro-2.html#thm1-eccpower" class="xref" data-knowl="./knowl/xref/thm1-eccpower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 20">20</a> that the phrase “can correct up to <span class="process-math">\(e\)</span> errors” means that the code can <em class="emphasis">always</em> correct <em class="emphasis">any</em> pattern of <span class="process-math">\(e\)</span> or fewer errors, regardless of which codeword they occur in, or where they occur within the word. If there is even just <em class="emphasis">one</em> pattern of <span class="process-math">\(e\)</span> errors in <em class="emphasis">one</em> codeword that cannot be correctly decoded, then the code cannot correct <span class="process-math">\(e\)</span> errors.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-28">Two very common ways to apply Theorem <a href="chap-intro-2.html#thm1-eccpower" class="xref" data-knowl="./knowl/xref/thm1-eccpower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 20">20</a> are stated in this corollary:<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="corollary theorem-like" id="chap-intro-2-3-4-29"><h5 class="heading">
+<span class="type">Corollary</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="chap-intro-2-3-4-29-1-1">A code with <span class="process-math">\(d \geq 3\)</span> can correct 1 error, and a code with <span class="process-math">\(d \lt 3\)</span> cannot correct any errors.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-29-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Corollary 21"><a href="#chap-intro-2-3-4-29" title="Copy heading and permalink for Corollary 21" aria-label="Copy heading and permalink for Corollary 21">🔗</a></div></article><div class="para" id="chap-intro-2-3-4-30">Also note that, due to the floor in Theorem <a href="chap-intro-2.html#thm1-eccpower" class="xref" data-knowl="./knowl/xref/thm1-eccpower.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 20">20</a>, codes with sequential odd and even distances, such as <span class="process-math">\(d = 3\)</span> and <span class="process-math">\(d = 4\text{,}\)</span> can correct exactly the same number of errors. We usually aim for the lower odd values when creating codes, since these are (to some extent) more “efficient”.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-3-4-31">We end with a bit of notation. A binary block code <span class="process-math">\(C : \mathbb{Z}_{2}^{k}\to \mathbb{Z}_{2}^{n}\)</span> which has minimum distance <span class="process-math">\(d\)</span> and which contains <span class="process-math">\(M\)</span> codewords is called a <span class="process-math">\((n,M,d)\)</span> code. For example, the “2-to-5 code” in Figure <a href="chap-intro-2.html#ex1-2to5" class="xref" data-knowl="./knowl/xref/ex1-2to5.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 13">13</a> is a <span class="process-math">\((5,4,3)\)</span> code. The 3-repetition code is a <span class="process-math">\((3,2,3)\)</span> code.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-3-4-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Correcting errors"><a href="#chap-intro-2-3-4" title="Copy heading and permalink for Subsubsection: Correcting errors" aria-label="Copy heading and permalink for Subsubsection: Correcting errors">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Class notes"><a href="#chap-intro-2-3" title="Copy heading and permalink for Subsection: Class notes" aria-label="Copy heading and permalink for Subsection: Class notes">🔗</a></div></section><section class="exercises" id="chap-intro-2-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homework</span>
+</h3>
+<div class="para" id="chap-intro-2-4-2">
+<em class="alert">Computational problems (do <em class="emphasis">one</em>):</em><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="lower-alpha lower-alpha-level-1" id="chap-intro-2-4-3">
+<li id="chap-intro-2-4-3-1">
+<div class="para" id="chap-intro-2-4-3-1-1">The following message was first written in UTF-8, and then encoded using the 3-repetition code from class. Decode it and write the final message, showing all steps along the way.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-4-3-1-2">
+<em class="emphasis">000101000111011100000111001111000010000111000111000101000111000000011110</em><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#chap-intro-2-4-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="chap-intro-2-4-3-2">
+<div class="para" id="chap-intro-2-4-3-2-1">If possible, create a <span class="process-math">\((4,4,3)\)</span> code and explain why it has those parameters. If impossible, explain why it can’t be done. <em class="emphasis">Hint:</em> For simplicity, you can assume the code includes codeword 0000 (why?).<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#chap-intro-2-4-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="chap-intro-2-4-4">
+<em class="alert">Conceptual problems (do this one):</em><div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="lower-alpha lower-alpha-level-1" id="chap-intro-2-4-5"><li id="chap-intro-2-4-5-1">
+<div class="para" id="chap-intro-2-4-5-1-1">Let <span class="process-math">\(n &gt; 0\)</span> be an integer. Complete the statement of the following theorem, in terms of <span class="process-math">\(n\text{,}\)</span> and then write a proof:<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-4-5-1-2">
+<em class="alert">Theorem:</em> For any integer <span class="process-math">\(n \geq 1\text{,}\)</span> the <span class="process-math">\(n\)</span>-repetition code <span class="process-math">\(R_{n}\)</span> has rate <em class="emphasis">    </em>. It can correct up to <em class="emphasis">    </em> errors, and can detect up to <em class="emphasis">    </em> errors.<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap-intro-2-4-5-1-3">Be sure to account for the fact that <span class="process-math">\(n\)</span> may be even!<div class="autopermalink" data-description="Paragraph"><a href="#chap-intro-2-4-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#chap-intro-2-4-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Exercises: Homework"><a href="#chap-intro-2-4" title="Copy heading and permalink for Exercises: Homework" aria-label="Copy heading and permalink for Exercises: Homework">🔗</a></div></section><div class="autopermalink" data-description="Section"><a href="#chap-intro-2" title="Copy heading and permalink for Section" aria-label="Copy heading and permalink for Section">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="chap-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="course-documents.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
