@@ -98,6 +98,7 @@
     </p>
 
     <table xml:id="fig-1utf8">
+    <title>The UTF-8 code, showing only capital letters and space</title>  
     <tabular>
       <col halign="center" /> <col halign="center" right="minor" /> <col halign="center" /> <col halign="center" right="minor" /> <col halign="center" /> <col halign="center" />
       <row>
@@ -135,7 +136,7 @@
         <cell>V</cell>
         <cell>01010110</cell>
       </row>
-
+    
       <row>
         <cell>E</cell>
         <cell>01000101</cell>
@@ -181,7 +182,7 @@
         <cell>00100000</cell>
       </row>
     </tabular>
-    <title>The UTF-8 code, showing only capital letters and space</title>
+
   </table>
 
 
@@ -305,17 +306,17 @@
         </p>
 
         <figure xml:id="fig1-transmitgeneric">
+          <caption></caption>
           <image source="fig1-generictransmit.png" width="100%">
             <shortdescription></shortdescription>
           </image>
-          <caption></caption>
         </figure>
         
         <figure xml:id="fig1-transmitexample">
+          <caption></caption>
           <image source="fig1-transmitex.png" width="100%">
             <shortdescription></shortdescription>
           </image>
-          <caption></caption>
         </figure>
 
         <p>
