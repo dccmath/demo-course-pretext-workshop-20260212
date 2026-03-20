@@ -49,9 +49,76 @@
     For example, take this simple rule for turning capital letters and the space character into numbers:
   </p>
   <p>
-  <c>A = 0  B = 1  C = 2  ...  Y = 24  Z = 25  space = 26</c>
+  <table>
+  <title>Our first code</title> 
+    <tabular>
+      <row>
+        <cell>
+          Letter
+        </cell>
+        <cell>
+          Number
+        </cell>
+      </row>
+      <row>
+        <cell>
+          A
+        </cell>
+        <cell>
+          1
+        </cell>
+      </row>
+      <row>
+        <cell>
+          B
+        </cell>
+        <cell>
+          2
+        </cell>
+      </row>
+      <row>
+        <cell>
+          C
+        </cell>
+        <cell>
+          3
+        </cell>
+      </row>
+      <row>
+        <cell>
+          ...
+        </cell>
+        <cell>
+          ...
+        </cell>
+      </row>
+      <row>
+        <cell>
+          Y
+        </cell>
+        <cell>
+          24
+        </cell>
+      </row>
+      <row>
+        <cell>
+          Z
+        </cell>
+        <cell>
+          25
+        </cell>
+      </row>
+      <row>
+        <cell>
+          space
+        </cell>
+        <cell>
+          26
+        </cell>
+      </row>
+    </tabular>
+  </table>
   </p>
-</example>
 
   <p>
     This is an example of a code, which is simply a rule that specifies how to write a message using numbers.
@@ -59,11 +126,12 @@
     Think of a code as an attempt to make a message <em>more understandable</em> to a computer. Codes that involve secrecy are usually called “ciphers” or “cryptosystems”.
     We won’t study those in this class.
   </p>
+  </example>
 
   <example>
     <statement>
       <p>
-        The message “HI” is encoded as “7, 8”.
+        Using the code in Example <xref ref="fig-1simplecode" />, the message “HI” is encoded as “7, 8”.
         If someone sends you “7, 8, 26, 24, 14, 20”, you can decode it to get the message “HI YOU”.
         Notice how we had to use the 26 to write a space between words – only numbers can be transmitted, so if we don’t encode the space as a number, we end up with “HIYOU”, which is somewhat less than ideal.
       </p>
@@ -187,7 +255,7 @@
 
 
     <p>
-      Be careful: In Figure <xref ref="fig-1utf8" text="global" />, we’ve only shown part of UTF-8 – there are many other symbols that would make this code listing too large to fit on this page.
+      Be careful: In Table <xref ref="fig-1utf8" text="global" />, we’ve only shown part of UTF-8 – there are many other symbols that would make this code listing too large to fit on this page.
       For example, <c>01100001</c> represents the lowercase letter “a”, and <c>00100001</c> represents an exclamation point “!”.
       UTF-8 includes codewords for all English letters, digits, and many punctuation marks.
     </p>
