@@ -258,6 +258,7 @@
       Be careful: In Table <xref ref="fig-1utf8" text="global" />, we’ve only shown part of UTF-8 – there are many other symbols that would make this code listing too large to fit on this page.
       For example, <c>01100001</c> represents the lowercase letter “a”, and <c>00100001</c> represents an exclamation point “!”.
       UTF-8 includes codewords for all English letters, digits, and many punctuation marks.
+      <!-- Insert link to complete UTF-8 codetable? -->
     </p>
 
     <p>
